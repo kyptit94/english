@@ -1,0 +1,3 @@
+// types.d.ts
+declare module 'fastify-mongoose';
+declare module 'fastify-autoload';

@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "nodemon --delay 500ms build/index.js",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^5.8.0",
+    "fastify": "^4.26.2",
+    "fastify-autoload": "^3.13.0",
+    "fastify-mongoose": "^0.3.0",
+    "fastify-plugin": "^4.5.1",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.4",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.12.7",
+    "@types/pino": "^7.0.5",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  }
+}
