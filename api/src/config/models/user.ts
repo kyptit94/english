@@ -1,8 +1,15 @@
 import { Schema, Document, model, Model } from 'mongoose';
 export interface UserAttrs {
+    _id?: string;
     name: string;
     email: string;
     password: string;
+}
+
+export interface UserParams {
+    id: string;
+    page: number;
+    limit: number;
 }
 
 export const UserSchema: Schema = new Schema(
