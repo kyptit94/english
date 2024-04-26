@@ -10,7 +10,7 @@ export default async function (fastify: FastifyInstance, opts: RouteOptions) {
         const page = (request as UserRequest).params.page || 1;
         const limit = (request as UserRequest).params.limit || 10;
         const skip = (page - 1) * limit;
-        const list = await User.find().skip(skip).limit(limit).select('-password');
+        const list = await User.find().skip(skip).limit(limit).select('_id name email');
         return list;
     });
 
