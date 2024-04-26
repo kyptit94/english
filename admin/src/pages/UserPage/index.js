@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from "../../components/grid";
-import Dialog from './Dialog';
+import Dialog from '../../components/Dialog';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Create from './Create';
